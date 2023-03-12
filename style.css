@@ -5,6 +5,15 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.logo {
+  padding: 10px;
+  float: left;
+}
+
+.logo img {
+  height: 30px;
+}
+
 nav {
   background-color: #010f20;
   position: fixed;
