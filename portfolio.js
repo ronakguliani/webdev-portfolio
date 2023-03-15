@@ -1,4 +1,10 @@
 let prevScrollpos = window.pageYOffset;
+let submit = document.querySelector('#submit');
+let name = document.querySelector('#nameInput');
+let email = document.querySelector('#emailInput');
+let message = document.querySelector('#messageInput');
+
+submit.addEventListener('click', handleClick);
 
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
@@ -9,3 +15,17 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+function handleClick(event) {
+  event.preventDefault();
+  if (!name.value || !email.value || !message.value) {
+    console.warn('You must complete all fields to submit this form');
+    return;
+  }
+  const submissionDate = new Date().toLocaleString();
+  console.log('===== Form Submission =====');
+  console.log('Name: ' + name.value);
+  console.log('Email: ' + email.value);
+  console.log('Message: ' + message.value);
+  console.log('Date Submitted: ' + submissionDate);
+}
