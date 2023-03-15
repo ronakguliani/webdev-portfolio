@@ -15,6 +15,11 @@ body {
   height: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: #9be2e8;
+}
+
 nav {
   background-color: #001837;
   position: fixed;
@@ -65,6 +70,7 @@ h2 {
 }
 
 h3 {
+  font-size: 25px;
   text-align: center;
 }
 
@@ -83,7 +89,7 @@ header {
 }
 
 section {
-  font-size: 20px;
+  font-size: 18px;
   padding: 100px;
   color: white;
 }
@@ -114,18 +120,44 @@ section ul li {
   overflow: auto;
 }
 
-@media only screen and (max-width: 575px) {
-  .card {
-    font-size: 14px;
-  }
-}
-
 .card:hover {
   transform: translateY(-10px);
 }
 
+.card-footer {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #5dd0da;
+  align-items: center;
+  background-color: ;
+  margin-top: 30px;
+  padding: 10px;
+  height: 10px;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 575px) {
+  section {
+    padding: 50px;
+  }
+
+  nav li {
+    margin: 0 5px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .card {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+
 form {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: #001837;
   padding: 50px;
@@ -164,6 +196,7 @@ form {
   margin: 10px;
   width: 100%;
   display: flex;
+  justify-content: center;
 }
 
 .buttons input[type='reset']:hover,
