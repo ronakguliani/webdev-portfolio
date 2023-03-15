@@ -46,7 +46,7 @@ nav a {
 
 h1 span {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 30px;
   color: #9be2e8;
   text-align: center;
@@ -70,7 +70,6 @@ nav a:hover {
 header {
   display: flex;
   margin-top: 200px;
-  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,7 +78,8 @@ header {
 }
 
 section {
-  padding: 50px;
+  font-size: 20px;
+  padding: 100px;
   color: white;
 }
 
@@ -126,7 +126,7 @@ form {
   padding: 10px;
   border-radius: 10px;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #contact textarea {
