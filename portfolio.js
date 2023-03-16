@@ -1,6 +1,6 @@
 let prevScrollpos = window.pageYOffset;
 let submit = document.querySelector('#submit');
-let name = document.querySelector('#nameInput');
+let userName = document.querySelector('#nameInput');
 let email = document.querySelector('#emailInput');
 let message = document.querySelector('#messageInput');
 
@@ -18,13 +18,13 @@ window.onscroll = function () {
 
 function handleClick(event) {
   event.preventDefault();
-  if (!name.value || !email.value || !message.value) {
+  if (!userName.value || !email.value || !message.value) {
     console.warn('You must complete all fields to submit this form');
     return;
   }
   const submissionDate = new Date().toLocaleString();
   console.log('===== Form Submission =====');
-  console.log('Name: ' + name.value);
+  console.log('Name: ' + userName.value);
   console.log('Email: ' + email.value);
   console.log('Message: ' + message.value);
   console.log('Date Submitted: ' + submissionDate);
